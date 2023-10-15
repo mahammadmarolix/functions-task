@@ -1,0 +1,7 @@
+import string
+def is_pangram_set(s):
+    s = s.lower().replace(" ", "")
+    unique_chars = set(s)
+    return set(string.ascii_lowercase) == unique_chars
+sample_string = "The quick brown fox jumps over the lazy dog 566546"
+print("Is a pangram :", is_pangram_set(sample_string))
